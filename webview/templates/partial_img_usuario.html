@@ -1,0 +1,7 @@
+{% load staticfiles %}
+{% if nom_imagem %}
+    <img src="http://{{ S3_BUCKET }}{{ des_diretorio }}{{ size }}_{{ nom_imagem }}" width="{{ size }}" height="{{ size }}" />
+{% else %}
+    <img src="{% static "img/" %}thumb_{{ size }}.jpg" width="{{ size }}" height="{{ size }}" />
+{% endif %}
+

@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-14 16:22+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Cláudio <cla.gomess@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: imagem/services.py:42
+#, fuzzy
+msgid "Imagem Inválida:"
+msgstr "Invalid name!"
+
+#: usuario/services.py:51
+msgid "Nome inválido!"
+msgstr "Invalid name!"
+
+#: usuario/services.py:55
+msgid "A senha deve ter de 6 a 20 caracteres!"
+msgstr "The password must be 6 to 20 characters!"
+
+#: usuario/services.py:59
+msgid "As senhas não são iguais!"
+msgstr "Passwords don't match!"
+
+#: usuario/services.py:64
+#, fuzzy
+msgid "Este e-mail parece ser inválido!"
+msgstr "Your email address appears to be invalid."
+
+#: usuario/services.py:68
+msgid "Já existe alguém usando esse email"
+msgstr ""
+
+#: usuario/services.py:72
+msgid "Para se cadastrar, é necessário ler e concordar com os termos"
+msgstr "To register, you must read and agree to the terms"
+
+#: usuario/services.py:77
+msgid "Sua senha está incorreta!"
+msgstr "Your password is wrong!"
+
+#: webview/views.py:22
+msgid "Uma rede social de postagens publicas simples e underground."
+msgstr "A social network of simple public posts and underground."
+
+#: webview/views.py:23
+msgid "rede, social, network, socialmedia"
+msgstr ""
+
+#: webview/templates/layout.html:49
+msgid "Faça seu cadastro!"
+msgstr "Register!"
+
+#: webview/templates/layout.html:52 webview/templates/layout.html.py:55
+msgid "Sair =("
+msgstr "Logout =("
+
+#: webview/templates/layout.html:54 webview/templates/view_config.html:6
+msgid "Configurações"
+msgstr "Settings"
+
+#: webview/templates/partial_box_publicar.html:7
+msgid "Enviar"
+msgstr "Send"
+
+#: webview/templates/partial_box_usuario.html:4
+msgid "Seu Perfil:"
+msgstr "Your Profile:"
+
+#: webview/templates/partial_box_usuario.html:6
+msgid "Perfil:"
+msgstr "Profile:"
+
+#: webview/templates/partial_box_usuario.html:16
+msgid "Seguidores"
+msgstr "Followers"
+
+#: webview/templates/partial_box_usuario.html:17
+msgid "Seguindo"
+msgstr "Following"
+
+#: webview/templates/partial_box_usuario.html:35
+msgid "Seguidores:"
+msgstr "Followers:"
+
+#: webview/templates/partial_box_usuario.html:46
+msgid "Não há seguidores."
+msgstr "There are no followers."
+
+#: webview/templates/partial_box_usuario.html:51
+msgid "Seguindo:"
+msgstr "Following:"
+
+#: webview/templates/partial_box_usuario.html:62
+msgid "Não segue ninguém."
+msgstr "Don't follow anyone."
+
+#: webview/templates/partial_bt_seguir.html:3
+msgid "Seguir"
+msgstr "Follow"
+
+#: webview/templates/partial_bt_seguir.html:5
+msgid "Não Seguir"
+msgstr "Don't Follow"
+
+#: webview/templates/partial_li_post.html:20
+msgid "Comentar"
+msgstr "Comment"
+
+#: webview/templates/partial_li_post.html:25
+msgid "Gostei"
+msgstr ""
+
+#: webview/templates/partial_li_post.html:29
+msgid "Ver post"
+msgstr "See post"
+
+#: webview/templates/partial_li_post.html:33
+#: webview/templates/partial_li_post.html:47
+msgid "Excluir"
+msgstr "Remove"
+
+#: webview/templates/partial_li_post.html:38
+msgid "Carregar Comentários"
+msgstr "Load Comments"
+
+#: webview/templates/partial_mail_codecadastro.html:2
+msgid "Olá! seu código de verificação é:"
+msgstr "Hello! Your Verification Code is:"
+
+#: webview/templates/partial_mail_novocadastro.html:2
+msgid "Olá! seja bem vindo!"
+msgstr "Hello! Welcome!"
+
+#: webview/templates/view_404.html:5
+msgid "404 - Página não encontrada"
+msgstr "404 - Page no found"
+
+#: webview/templates/view_config.html:11
+msgid "Identificação:"
+msgstr "Identification:"
+
+#: webview/templates/view_config.html:13
+msgid "ID:"
+msgstr "ID:"
+
+#: webview/templates/view_config.html:16
+msgid "Data Cadastro:"
+msgstr "Registration Date:"
+
+#: webview/templates/view_config.html:19
+msgid "Ultimo acesso:"
+msgstr "Last Login:"
+
+#: webview/templates/view_config.html:22 webview/templates/view_index.html:29
+msgid "Nome:"
+msgstr "Name:"
+
+#: webview/templates/view_config.html:26
+#: webview/templates/view_config.html:108 webview/templates/view_index.html:13
+msgid "Email:"
+msgstr "Email:"
+
+#: webview/templates/view_config.html:28
+msgid "Foto:"
+msgstr "Picture:"
+
+#: webview/templates/view_config.html:30
+msgid "Uma foto de até 2MB"
+msgstr "A photo of up to 2MB"
+
+#: webview/templates/view_config.html:47
+msgid "Segurança"
+msgstr "Security"
+
+#: webview/templates/view_config.html:47
+msgid "(Preencha somente se for alterar)"
+msgstr "(Complete only if changing)"
+
+#: webview/templates/view_config.html:49
+msgid "Senha Atual:"
+msgstr "Current Password:"
+
+#: webview/templates/view_config.html:53
+msgid "Senha Nova:"
+msgstr "New password:"
+
+#: webview/templates/view_config.html:57 webview/templates/view_index.html:45
+msgid "Senha Novamente:"
+msgstr "Password Again:"
+
+#: webview/templates/view_config.html:60
+msgid "Localização"
+msgstr "Location"
+
+#: webview/templates/view_config.html:63
+msgid "Pais:"
+msgstr "Country:"
+
+#: webview/templates/view_config.html:64
+msgid "(A alteração do pais afeta os post da rede)"
+msgstr "(Changing the country affect the net post)"
+
+#: webview/templates/view_config.html:79
+msgid "Idioma:"
+msgstr "Language:"
+
+#: webview/templates/view_config.html:93
+msgid "Fuso horário:"
+msgstr "Time Zone:"
+
+#: webview/templates/view_config.html:106
+msgid "Privacidade"
+msgstr "Privacy"
+
+#: webview/templates/view_config.html:111
+msgid "Desejo receber apenas e-mails importantes"
+msgstr "I wish to receive only important emails"
+
+#: webview/templates/view_config.html:114
+msgid "Desejo receber todos e-mails"
+msgstr "I want to receive all emails"
+
+#: webview/templates/view_config.html:120
+msgid "Salvar"
+msgstr "Save"
+
+#: webview/templates/view_config.html:122
+msgid "Excluir minha conta =("
+msgstr "Delete my account = ("
+
+#: webview/templates/view_home.html:9
+msgid "Publique Qualquer Coisa:"
+msgstr "Publish Anything:"
+
+#: webview/templates/view_home.html:12
+msgid "Últimas Publicações da rede:"
+msgstr "Latest Publications of the network:"
+
+#: webview/templates/view_home.html:23
+msgid "Não há publicações de seu país."
+msgstr "Don't have postings in your country."
+
+#: webview/templates/view_home.html:29
+msgid "Publicações de amigos:"
+msgstr "Friend's publications:"
+
+#: webview/templates/view_home.html:40
+msgid "Não há publicações de amigos."
+msgstr "Don't have friends posts."
+
+#: webview/templates/view_index.html:5
+msgid "Acesse:"
+msgstr "Sign In:"
+
+#: webview/templates/view_index.html:8
+msgid "Login ou senha incorretos!"
+msgstr "Login or password is incorrect!"
+
+#: webview/templates/view_index.html:17
+msgid "Senha:"
+msgstr "Password:"
+
+#: webview/templates/view_index.html:20 webview/templates/view_index.html:37
+#: webview/templates/view_index.html:41
+msgid "Acessar"
+msgstr "Access"
+
+#: webview/templates/view_index.html:24
+msgid "Cadastre-se! É rápido!"
+msgstr "Sign up! It's fast!"
+
+#: webview/templates/view_index.html:25
+msgid "Não queremos seus dados, só queremos que você se divirta!"
+msgstr "We don't want your data, we want you have fun!"
+
+#: webview/templates/view_index.html:33
+msgid "Sobrenome:"
+msgstr "Surname:"
+
+#: webview/templates/view_index.html:52
+msgid "Concordo com os termos de uso."
+msgstr "I agree with the terms of use."
+
+#: webview/templates/view_index.html:54
+msgid "Cadastrar"
+msgstr "Register"
+
+#: webview/templates/view_index.html:62
+msgid "Código de verificação:"
+msgstr "Verification Key:"
+
+#: webview/templates/view_index.html:67
+msgid "Concluir Cadastro"
+msgstr "Complete Sign Up"
+
+#: webview/templates/view_profile.html:10
+msgid "Suas postagens:"
+msgstr "Your posts:"
+
+#: webview/templates/view_profile.html:12
+msgid "Postagens de"
+msgstr "Postings of"
+
+#: webview/templates/view_profile.html:22
+msgid "Você não possui publicações."
+msgstr "You don't have publications."

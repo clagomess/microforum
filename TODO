@@ -1,0 +1,26 @@
+#1 Crie o projeto
+django-admin.py startproject mysite
+
+#2 Inicia o servidor
+python manage.py runserver 8080
+
+#3 Criar app
+python manage.py startapp polls
+
+# Sincronize o banco
+python manage.py syncdb #ou
+python manage.py sql nigga
+
+# Gera Internacionalização
+python manage.py makemessages -l en_US
+python manage.py compilemessages
+
+
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_PATH,'templates'),
+)
+
+<\?php echo _\("(.+?)\"\); \?>
+{% trans "$1" %}
+
+http://djangosaur.tumblr.com/post/422589280/django-resize-thumbnail-image-pil

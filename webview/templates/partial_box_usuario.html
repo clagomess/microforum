@@ -1,0 +1,64 @@
+{% load i18n %}
+{% load partials %}
+{% if usuario.seq_usuario == auth.seq_usuario %}
+    <h2>{% trans "Seu Perfil:" %}</h2>
+{% else %}
+    <h2>{% trans "Perfil:" %}</h2>
+{% endif %}
+<div class="perfil">
+    <a href="/profile/{{ usuario.cod_usuario }}" class="thumb">
+        {% img_usuario usuario.nom_imagem usuario.des_diretorio 70 %}
+    </a>
+    <div class="info">
+        <p>{{ usuario.nom_usuario }}</p>
+        <table width="100%">
+            <tr>
+                <td>{% trans "Seguidores" %}</td>
+                <td>{% trans "Seguindo" %}</td>
+            </tr>
+            <tr>
+                <td>{{ usuario.num_seguidor }}</td>
+                <td>{{ usuario.num_seguindo }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="clear"></div>
+    <div id="bt-seguidor">
+        {% if perfil == 1 and usuario.seq_usuario != auth.seq_usuario and auth != None %}
+            {% bt_seguir usuario.dat_seguindo usuario.cod_usuario %}
+        {% endif %}
+    </div>
+    <div class="clear"></div>
+</div>
+<h2>
+    <a href="/home/followers/{{ usuario.cod_usuario }}">
+    {% trans "Seguidores:" %}
+    </a>
+</h2>
+{% if usuario.num_seguidor > 0 %}
+    <ul class="grid-pessoas">
+        {% for item in seguidores %}
+            {% li_grid item %}
+        {% endfor %}
+    </ul>
+{% else %}
+    <div class="grid-pessoas">
+        <div class="none-label">{% trans "Não há seguidores." %}</div>
+    </div>
+{% endif %}
+<h2>
+    <a href="/home/following/{{ usuario.cod_usuario }}">
+    {% trans "Seguindo:" %}
+    </a>
+</h2>
+{% if usuario.num_seguindo > 0 %}
+    <ul class="grid-pessoas">
+        {% for item in seguindo %}
+            {% li_grid item %}
+        {% endfor %}
+    </ul>
+{% else %}
+    <div class="grid-pessoas">
+        <div class="none-label">{% trans "Não segue ninguém." %}</div>
+    </div>
+{% endif %}

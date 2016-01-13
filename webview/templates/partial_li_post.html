@@ -1,0 +1,59 @@
+﻿{% load i18n %}
+{% load partials %}
+<li cod_post="{{ post.cod_post }}" dat_post="{{ post.dat_post|date:"Y/m/d H:i:s" }}">
+    <div class="thumb">
+        <a href="/profile/{{ post.cod_usuario }}">
+            {% if post.seq_post_pai %}
+                {% img_usuario post.nom_imagem_usuario post.des_diretorio_usuario 32 %}
+            {% else %}
+                {% img_usuario post.nom_imagem_usuario post.des_diretorio_usuario 50 %}
+            {% endif %}
+        </a>
+    </div>
+    <div class="pcontent">
+        <h4>{{ post.nom_usuario }}</h4>
+        <div class="text">{{ post.des_post }}</div>
+        {% if not post.seq_post_pai %}
+            <div class="action">
+                {{ post.num_post_filho }} ☁ &bull;
+                <a href="#">
+                    {% trans "Comentar" %}
+                </a>
+                &bull;
+                {{ post.num_like }} ☁ &bull;
+                <a href="#">
+                    {% trans "Gostei" %}
+                </a>
+                &bull;
+                <a href="/post/{{ post.cod_post }}">
+                    {% trans "Ver post" %}
+                </a>
+                {% if post.seq_usuario == auth.seq_usuario %}
+                    &bull; <a href="#" class="off">
+                        {% trans "Excluir" %}
+                    </a>
+                {% endif %}
+                {% if post.num_post_filho > 3 %}
+                    &bull; <a href="#">
+                        {% trans "Carregar Comentários" %}
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
+        <div class="data">
+            {{ post.dat_post|date:"H:i - d/M/y" }}
+            {% if post.seq_usuario == auth.seq_usuario and post.num_post_filho > 0 %}
+                &bull; <a href="#" class="off">
+                    {% trans "Excluir" %}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+    {% if post.num_post_filho > 0 %}
+    <ul class="post pcomment">
+        {% for value in post.row_filho %}
+            {% li_post value auth %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+</li>

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% load partials %}
+{% block content %}
+    <div style="margin:0 auto; width:400px; font-size: 0px;">
+        <h2>Post:</h2>
+        <ul id="post" class="post">
+            {% for key, value in post.items %}
+                {% li_post value auth %}
+            {% endfor %}
+        </ul>
+
+        {% if auth != None %}
+            {% box_publicar %}
+        {% endif %}
+    </div>
+{% endblock %}

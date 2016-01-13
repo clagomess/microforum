@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="not-found">
+        {% trans "404 - Página não encontrada" %}
+    </div>
+    <div class="not-found-url">
+        http://{{ request.META.HTTP_HOST }}{{ request.get_full_path }}
+    </div>
+{% endblock %}

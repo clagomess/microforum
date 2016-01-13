@@ -1,0 +1,6 @@
+{% load partials %}
+<li>
+    <a href="/profile/{{ seguidor.cod_usuario }}" title="{{ seguidor.nom_usuario }}">
+        {% img_usuario seguidor.nom_imagem seguidor.des_diretorio 50 %}
+    </a>
+</li>

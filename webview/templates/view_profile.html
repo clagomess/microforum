@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% load partials %}
+{% block content %}
+    <div class="left-bar">
+        {% box_usuario usuario 1 auth seguindo seguidores %}
+    </div>
+    <div style="width:530px; float:right; font-size: 0px;">
+        {% if usuario.seq_usuario == auth.seq_usuario %}
+            <h2>{% trans "Suas postagens:" %}</h2>
+        {% else %}
+            <h2>{% trans "Postagens de" %} {{ usuario.nom_usuario }}:</h2>
+        {% endif %}
+
+        {% if post|length %}
+            <ul id="post-usuario" class="post">
+                {% for key, value in post.items %}
+                    {% li_post value auth %}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="none-label">{% trans "Você não possui publicações." %}</div>
+        {% endif %}
+    </div>
+    <!--<input type="hidden" value="<?php echo $this->usuario['nu_usuario']; ?>" id="nu_usuario"/>-->
+{% endblock %}

@@ -1,0 +1,6 @@
+{% load i18n %}
+{% if vinculo == None %}
+    <a href="#" class="bta" modo="seguir" cod_usuario="{{ cod_usuario }}">{% trans "Seguir" %}</a>
+{% else %}
+    <a href="#" class="bta bta-off" modo="naoseguir" cod_usuario="{{ cod_usuario }}">{% trans "Não Seguir" %}</a>
+{% endif %}

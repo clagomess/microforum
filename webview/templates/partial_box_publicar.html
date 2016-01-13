@@ -1,0 +1,11 @@
+﻿{% load i18n %}
+<div id="<?php echo $this->id; ?>" class="box-publicar">
+    <textarea name="tx-publicar"></textarea>
+    <div class="clear"></div>
+    <span class="contador">0/200</span>
+    <div class="bt-enviar">
+        <input type="button" value="{% trans "Enviar" %}" class="b-bt-enviar"/>
+    </div>
+    <div class="clear"></div>
+    <div class="load" style="display:none"></div>
+</div>

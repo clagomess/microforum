@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% load i18n %}
+{% load partials %}
+{% block content %}
+    <div class="left-bar">
+        {% box_usuario usuario 0 auth seguindo seguidores %}
+    </div>
+    <div class="middle-bar">
+        <h2>{% trans "Publique Qualquer Coisa:" %}</h2>
+        {% box_publicar %}
+        <h2>
+            {% trans "Últimas Publicações da rede:" %}
+            <div class="load" style="display:none"></div>
+        </h2>
+        {% if network_post|length %}
+            <ul id="post-rede" class="post">
+                {% for key, value in network_post.items %}
+                    {% li_post value auth %}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="post">
+                <div class="none-label">{% trans "Não há publicações de seu país." %}</div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="right-bar">
+        <h2>
+            {% trans "Publicações de amigos:" %}
+            <div class="load" style="display:none"></div>
+        </h2>
+        {% if friend_post|length %}
+            <ul id="post-amigo" class="post">
+                {% for key, value in friend_post.items %}
+                    {% li_post value auth %}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <div class="post">
+                <div class="none-label">{% trans "Não há publicações de amigos." %}</div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="clear"></div>
+{% endblock %}
